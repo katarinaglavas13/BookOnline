@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    tools:context=".SettingsActivity">
+
+    <RelativeLayout
+        android:id="@+id/profileData"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/shape_toolbar01">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/personImage"
+            android:layout_width="186dp"
+            android:layout_height="167dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/reading1" />
+
+        <TextView
+            android:id="@+id/viewLl"
+            android:layout_width="248dp"
+            android:layout_height="52dp"
+            android:layout_below="@id/personImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:fontFamily="cursive"
+            android:text="Ime i prezime"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            android:textStyle="bold">
+
+        </TextView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/viewFullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profileData"
+        android:layout_marginTop="40dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_profile_person"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ime i prezime"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/fullnameTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Marija Marić"
+            android:textColor="@color/gray02"
+            android:layout_marginLeft="25dp"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@id/linearLine1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/viewFullname"
+        android:background="@color/gray2"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <LinearLayout
+        android:id="@+id/viewEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLine1"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_profile_email"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/emailTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="marija.maric@fpmoz.sum.ba"
+            android:textColor="@color/gray02"
+            android:layout_marginLeft="25dp"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@id/linearLine2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/viewEmail"
+        android:background="@color/gray2"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <LinearLayout
+        android:id="@+id/viewPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLine2"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_profile_phone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Telefon"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/phoneTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="+38763-123-456"
+            android:textColor="@color/gray02"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/linearLine3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/viewPhone"
+        android:background="@color/gray2"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLine3"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="40dp">
+
+        <Button
+            android:id="@+id/editProfile"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/ic_baseline_edit_24"
+            android:text="Uredi profil"
+            android:textColor="#4F80BB"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/changePassword"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/white"
+            android:text="Promijeni lozinku"
+            android:textSize="15dp"
+            android:textColor="#4F80BB"
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/logoutBtn"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            app:backgroundTint="@color/white"
+            android:text="Odjava"
+            android:textSize="15dp"
+            android:textColor="@color/red"
+            android:drawableLeft="@drawable/ic_baseline_logout_24"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/plava"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/menu" />
+
+</RelativeLayout>
